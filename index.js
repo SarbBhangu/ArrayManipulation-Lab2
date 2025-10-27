@@ -1,16 +1,23 @@
 let shoppingList= []
 
-function addItems(item) {
+function addItem(item) {
     shoppingList.push(item);
 }
 
-addItems('Apple');
-addItems('Soda');
-addItems('TV');
-addItems('Milk');
-addItems('Water');
+addItem('Apple');
+addItem('Soda');
+addItem('TV');
+addItem('Milk');
+addItem('Water');
 console.log(shoppingList);
 
+function removeLastItem() {
+    shoppingList.pop();
+}
+
+removeLastItem();
+
+console.log(shoppingList);
 
 
 
