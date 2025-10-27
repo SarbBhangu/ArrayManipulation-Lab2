@@ -1,7 +1,12 @@
 let shoppingList= []
 
 function addItem(item) {
-    shoppingList.push(item);
+    if (!shoppingList.includes(item)) {
+        shoppingList.push(item);
+    }
+    else {
+        console.log(`${item} is already on the list`)
+    }
 }
 
 addItem('Apple');
