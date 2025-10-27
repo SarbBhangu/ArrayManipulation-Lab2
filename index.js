@@ -58,3 +58,14 @@ function renderList() {
         list.appendChild(li);
     }
 }
+
+addBtn.addEventListener("click", function(){
+    addItem(input.value);
+    input.value=""
+    renderList();
+})
+
+removeBtn.addEventListener("click", function(){
+    removeLastItem();
+    renderList()
+})
