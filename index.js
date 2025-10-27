@@ -44,3 +44,9 @@ function filterItems(searchTerm) {
 }
 
 console.log(filterItems("m"))
+
+const input = document.querySelector("#itemInput");
+const addBtn = document.querySelector("#addBtn");
+const removeBtn = document.querySelector("#removeBtn");
+const list = document.querySelector("#list");
+
