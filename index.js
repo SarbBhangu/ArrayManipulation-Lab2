@@ -1,8 +1,16 @@
 let shoppingList= []
-shoppingList.push("Apple");
-shoppingList.push("Soda");
-shoppingList.push("TV");
-shoppingList.push("Milk");
-shoppingList.push("Water");
 
+function addItems(item) {
+    shoppingList.push(item);
+}
+
+addItems('Apple');
+addItems('Soda');
+addItems('TV');
+addItems('Milk');
+addItems('Water');
 console.log(shoppingList);
+
+
+
+
