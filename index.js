@@ -50,3 +50,11 @@ const addBtn = document.querySelector("#addBtn");
 const removeBtn = document.querySelector("#removeBtn");
 const list = document.querySelector("#list");
 
+function renderList() {
+    list.innerHTML = ""; 
+    for (let i = 0; i < shoppingList.length; i++) {
+        const li = document.createElement("li");
+        li.textContent = shoppingList[i];
+        list.appendChild(li);
+    }
+}
