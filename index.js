@@ -35,7 +35,7 @@ displayList();
 function filterItems(searchTerm) {
     let results = [];
     for (let i = 0; i < shoppingList.length; i++) {
-        if (shoppingList[i].includes(searchTerm)) {
+        if (shoppingList[i].toLowerCase().includes(searchTerm.toLowerCase())) {
             results.push(shoppingList[i]);
         }    
     }
@@ -43,4 +43,4 @@ function filterItems(searchTerm) {
 
 }
 
-console.log(filterItems("W"))
+console.log(filterItems("m"))
