@@ -32,3 +32,15 @@ function displayList() {
 
 displayList();
 
+function filterItems(searchTerm) {
+    let results = [];
+    for (let i = 0; i < shoppingList.length; i++) {
+        if (shoppingList[i].includes(searchTerm)) {
+            results.push(shoppingList[i]);
+        }    
+    }
+    return results;
+
+}
+
+console.log(filterItems("W"))
